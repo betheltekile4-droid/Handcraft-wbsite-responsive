@@ -300,47 +300,23 @@ color:gray;
           flex-direction: column;
           .card{
             flex: 1 1 100%;
-          }
+        }
         }
         .section{
-          flex-direction: column;
-          text-align: center;
-          gap: 20px;
-        }
-        .section-box{
-          width: 100%;
-          padding: 10px 0;
+flex-direction:column;
+gap:30px;
+}
 
-        }
-        .section-box h3{
-          font-size: 1.4rem;
+.footer{
+flex-direction:column;
+}
 
-        }
-        .section-box p{
-          font-size: 0.9rem;
-      }
-  .footer-bottom {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    flex-wrap: wrap;
-  }
+.section-box{
+padding:40px 20px;
+}
+.featured{
+  height: auto;
+  grid-template-columns:repeat(2,1fr);
+}
 
-  .footer-column {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .footer-column h4 {
-    font-size: 16px;
-  }
-
-  .footer-column p {
-    font-size: 14px;
-  }
-
-  .footer-copy {
-    font-size: 12px;
-    text-align: center;
-  }
 }
