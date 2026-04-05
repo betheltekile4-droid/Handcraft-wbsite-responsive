@@ -16,8 +16,8 @@
 <li><a href="#">About</a></li>
 </ul>
 <div class="right">
-<span>&#128722;</span>
-<a href="#">Sign Up</a>
+    <a href="#"><span>&#128722;</span> Cart</a>
+    <a href="#" id="signupBtn">Sign Up</a>
 </div>
 </nav>
 </header>
@@ -31,77 +31,130 @@
 </section>
 
 <section class="featured">
-    <div="container">
-<div class="top">
-<h1>Featured</h1>
-<a href="#" class="view-all">View all →</a>
-</div>
-<p class="subtitle">Our most loved pieces</p>
-<div class="product">
-<div class="card">
-<div class="img card1"></div>
-<h3><span class="bag">&#128717;</span>Sage & Cedar Candle</h3>
-<p>$34</p>
-</div>
-<div class="card">
-<div class="img card2"></div>
-<h3><span class="bag">&#128717;</span>Artisan Ceramic Mug</h3>
-<p>$28</p>
-</div>
-<div class="card">
-<div class="img card3"></div>
-<h3><span class="bag">&#128717;</span>Linen Market Tote</h3>
-<p>$42</p>
-</div>
-<div class="card">
-<div class="img card4"></div>
-<h3> <span class="bag">&#128717;</span>Herbal Garden Soap</h3>
-<p>$16</p>
-</div>
-</div>
-</section>
-<section class="section">
-    <div class="section-box">
-        <h3>HandCraft</h3>
-        <p>Every piece made with intention and skill</p>
+  <div class="container">
+    <div class="top">
+      <h1>Featured</h1>
+      <a href="#" id="viewAllBtn" class="view-all">View all →</a>
     </div>
-        <div class="section-box">
-            <h3>sustainable</h3>
-            <p>Eco-friendly material and practices </p>
-        </div>
-        <div class="section-box">
-            <h3>small Batch</h3>
-            <p>Limted runs for unique,special item</p>
+    <p class="subtitle">Our most loved pieces</p>
 
-        </div>
-    
-    </section>
-    <div class="white-gap"></div> 
-    <footer class="footer">
+    <div class="product">
 
-    <div class="footer-bottom">
-       <div class="footer-column">
-        <h4>HandCraft</h4> 
-        <P>cureted artian good for mindful living.Each piece tells a story of carftsmanship and care</</P>
-       </div>
-        <div class="footer-column">
-             <h4>Quick link</h4>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">shop All</a></li>
-            </ul>
+      <!-- Visible cards -->
+      <div class="card">
+        <div class="img card1"></div>
+        <h3><span class="bag">&#128717;</span> Sage & Cedar Candle</h3>
+        <p>$34</p>
+      </div>
 
-        </div>
-           <div class="footer-column">
-            <h4>contact</h4>
-            <p>hello@bethel.com</p>
-           </div>
+      <div class="card">
+        <div class="img card2"></div>
+        <h3><span class="bag">&#128717;</span> Artisan Ceramic Mug</h3>
+        <p>$28</p>
+      </div>
 
-           <div class="footer-copy">
-            <p>&copy;2026 HandCraft.All rights reserved</p>
-           </div>
+      <div class="card">
+        <div class="img card3"></div>
+        <h3><span class="bag">&#128717;</span> Handwoven Basket</h3>
+        <p>$42</p>
+      </div>
 
+      <div class="card">
+        <div class="img card4"></div>
+        <h3><span class="bag">&#128717;</span> Herbal Garden Soap</h3>
+        <p>$16</p>
+      </div>
+
+     <!-- Hidden cards -->
+<!-- Hidden cards -->
+<div class="card hidden-item card5">
+  <div class="img"></div>
+  <h3><span class="bag 2">&#128717;</span> Wooden Spoon</h3>
+  <p>$12</p>
+</div>
+
+
+</section>
+
+<section class="section">
+  <div class="section-box">
+    <h3>HandCraft</h3>
+    <p>Every piece made with intention and skill</p>
+  </div>
+  <div class="section-box">
+    <h3>Sustainable</h3>
+    <p>Eco-friendly material and practices</p>
+  </div>
+  <div class="section-box">
+    <h3>Small Batch</h3>
+    <p>Limited runs for unique, special items</p>
+  </div>
+</section>
+
+<div class="white-gap"></div> 
+
+<footer class="footer">
+  <div class="footer-bottom">
+    <div class="footer-column">
+      <h4>HandCraft</h4> 
+      <p>Curated artisan goods for mindful living. Each piece tells a story of craftsmanship and care.</p>
+    </div>
+    <div class="footer-column">
+      <h4>Quick link</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop All</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Contact</h4>
+      <a href="#">hello@bethel.com</a>
+    </div>
+  </div>
+  <div class="footer-copy">
+    <p>&copy;2026 HandCraft. All rights reserved</p>
+  </div>
 </footer>
+
+<!-- Signup Popup -->
+<div id="signupBox">
+  <div id="signupForm">
+    <h2>Login</h2>
+    <input type="text" id="fullname" placeholder="Username">
+    <input type="email" id="email" placeholder="Email Address">
+    <input type="password" id="password" placeholder="Password">
+    <input type="password" id="confirmPassword" placeholder="Confirm Password">
+    <button id="createAccount">Create Account</button>
+    <button id="closeSignup">Close</button>
+  </div>
+  <div id="nextForm">
+    <h2>Sign Up</h2>
+    <input type="text" id="fullname" placeholder="Full Name">
+    <input type="email" id="email" placeholder="Email Address">
+    <input type="password" id="password" placeholder="Password">
+    <input type="password" id="confirmPassword" placeholder="Confirm Password">
+    <button id="saveDetails">Save Details</button>
+    <button id="backSignup">Back</button>
+  </div>
+</div>
+
+<div id="cartModal" class="cart-sidebar">
+  <div class="cart-header">
+    <h3>Your Cart</h3>
+    <span id="closeCart" class="close-icon">&times;</span>
+  </div>
+  <div id="cartItemsList" class="cart-body"></div>
+  <div class="cart-footer">
+    <div class="subtotal-row">
+      <span>Subtotal</span>
+      <span id="totalPrice">$0.00</span>
+    </div>
+    <p class="shipping-note">Shipping & taxes calculated at checkout.</p>
+    <button class="checkout-btn">Checkout</button>
+  </div>
+</div>
+
+<script src="crft.js"></script>
 
 </body>
 </html>
